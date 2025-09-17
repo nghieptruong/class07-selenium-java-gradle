@@ -16,5 +16,12 @@ dependencies {
 
 test {
     useTestNG() {
+        useDefaultListeners = true //dùng để tạo report testNG
+        outputDirectory = file("$projectDir/test-output") // folder chứa testNG report
+    }
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
     }
 }

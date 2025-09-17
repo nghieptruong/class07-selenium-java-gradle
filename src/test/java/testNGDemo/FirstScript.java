@@ -6,7 +6,13 @@ import org.testng.annotations.Test;
 public class FirstScript {
 
     @Test
-    public void testScript() {
-        Assert.assertEquals(1, 2, "Example test");
+    public void testFirstScript() {
+        Assert.assertEquals(1, 1, "Test Example 1");
     }
+
+    @Test
+    public void testSecondScript() {
+        Assert.assertEquals(1, 1, "Test Example 2");
+    }
+
 }
