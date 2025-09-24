@@ -1,9 +1,9 @@
-package testNGDemo;
+package testngDemo;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FirstScript {
+public class FirstScript{
 
     @Test
     public void testFirstScript() {

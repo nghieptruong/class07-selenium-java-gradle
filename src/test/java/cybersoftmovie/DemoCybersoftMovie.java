@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 
 import java.time.Duration;
@@ -51,9 +52,11 @@ public class DemoCybersoftMovie {
         System.out.println(driver + " - testRegister running...");
 
         //Step 1: Go to https://demo1.cybersoft.edu.vn/sign-up
+        Reporter.log("Step 1: Go to https://demo1.cybersoft.edu.vn/sign-up");
         driver.get("https://demo1.cybersoft.edu.vn/sign-up");
 
         //Step 2: Enter value on 'Tai khoan' textbox
+        Reporter.log("Step 2: Enter value on 'Tai khoan' textbox");
         //go vao Tai Khoan textbox
 //        By byTxtAccount = By.id("taiKhoan");
         String account = "Test" + UUID.randomUUID();
